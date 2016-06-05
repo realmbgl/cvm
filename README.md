@@ -58,7 +58,7 @@ launching with mesos marathon
 ```
 
 ```
-https://<myvm-ip>:<myvm-1st-port->/vnc.html
+https://<myvm-ip>:<myvm-1st-port>/vnc.html
 
 username: ubuntu
 initial password: passw0rd
