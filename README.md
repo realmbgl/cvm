@@ -17,7 +17,7 @@ docker run -d -p 2222:22 -p 5900:5900 -p 6080:6080 myvm
 
 
 ```
-https://<your-host-name>:6080/vnc.html
+https://<your-host-ip>:6080/vnc.html
 
 username: ubuntu
 initial password: passw0rd
@@ -55,5 +55,12 @@ launching with mesos marathon
   "constraints": []
 
 }
+```
+
+```
+https://<myvm-ip>:<myvm-1st-port->/vnc.html
+
+username: ubuntu
+initial password: passw0rd
 ```
 
