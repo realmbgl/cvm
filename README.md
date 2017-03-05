@@ -12,7 +12,7 @@ docker build -t myvm .
 
 
 ```
-docker run -d -p 2222:22 -p 5900:5900 -p 6080:6080 myvm
+docker run -d -p 2222:22 -p 6080:6080 --name=myvm myvm
 ```
 
 
@@ -41,7 +41,6 @@ launching with mesos marathon
       "network": "BRIDGE",
       "portMappings": [
         { "containerPort": 6080, "protocol": "tcp" },
-        { "containerPort": 5900, "protocol": "tcp" },
         { "containerPort": 22, "protocol": "tcp" }
       ]
     }

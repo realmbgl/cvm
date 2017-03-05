@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:14.04
 RUN apt-get update
 RUN apt-get install -y net-tools
 RUN apt-get install -y cloud-utils
@@ -16,5 +16,5 @@ RUN ./createseed.sh
 COPY self.pem .
 COPY startvm startvm
 RUN chmod +x startvm
-EXPOSE 22 5900 6080
+EXPOSE 22 6080
 CMD ["./startvm"]
